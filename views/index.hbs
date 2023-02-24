@@ -1,0 +1,37 @@
+<script type="module" src="./main.js"></script>
+<head> 
+
+</head>
+<body>
+    <link rel="stylesheet" href="/css/styles.css">
+    <div class="column">
+        
+        <div>
+            <form method="POST" action="/Remove" id="help">
+                <div class="fixedElement">
+                    {{#each FinUser.display}}
+                        <div class="column">
+                            <input type="checkbox" id="fight" name="FightsToDiscard" value={{this.FID}}>
+                            {{this.F1}} against {{this.F2}}
+                        </div>
+                    {{/each}}
+                    <input type="submit" value="RemoveFights" class="button">
+                </div>
+            </form>
+        </div>
+    </div class="app">
+    <div class="column">
+        {{#each FinEnv}}
+         {{this.list}}
+            <form method="POST" action="/HOME" id={{this.EventId}}>
+                <input type="hidden" id="custId" name="custId" value={{this.EventId}}>
+                <div class="button" name={{this.EventId}}>
+                    <input type="submit" value="View These Fights" >
+                </div>
+            </form>
+        {{/each}}
+    </div>
+    <form method="POST" action="/logout">
+        <input  type="submit" value="Logout"/>
+    </form>
+</body>

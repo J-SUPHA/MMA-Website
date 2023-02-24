@@ -1,0 +1,17 @@
+<script type="module" src="./main.js"></script>
+<link rel="stylesheet" href="/css/styles.css">
+    <form method="POST" action="/fights" id="help">
+        <div class="fixedElement">
+            {{#each showList}}
+            <div class="box2">
+                {{this.F1}} against {{this.F2}}
+                <input type="checkbox" id="fight" name={{this.Order}} value={{this.FID}}>
+            </div>    
+            {{/each}}
+            <input type="submit" value="AddFights" class="button">
+        </div>
+    </form>
+    <form method="POST" action="/logout">
+        <input  type="submit" value="Logout"/>
+    </form>
+    <a href="/Home"></a>
