@@ -36,17 +36,6 @@ An example of universal API object after middleware has sifted through raw API C
   SavedEvents: //aggragtes all the saved events so that all the saved events are filtered accordingly
 }
 ```
-## [Link to Commented First Draft Schema](db.mjs) 
-
-## Wireframes
-
-/list/create - login and create account page
-
-![list create](documentation/AccountLogin.jpg)
-
-/list - General page for all users 
-
-![list](documentation/GeneralPage.jpg)
 
 ## Site map
 
@@ -79,7 +68,6 @@ Site map can be accessed [here](https://docs.google.com/drawings/d/1goKXiTKbNzUr
 
 ## [Link to Initial Main Project File](app.mjs) 
 
-(__TODO__: create a skeleton Express application with a package.json, app.mjs, views folder, etc. ... and link to your initial app.mjs)
 
 ## Annotations / References Used
 
