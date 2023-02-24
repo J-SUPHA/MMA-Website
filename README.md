@@ -36,6 +36,17 @@ An example of universal API object after middleware has sifted through raw API C
   SavedEvents: //aggragtes all the saved events so that all the saved events are filtered accordingly
 }
 ```
+## [Link to Commented First Draft Schema](db.mjs) 
+
+## Wireframes
+
+/list/create - login and create account page
+
+![list create](documentation/AccountLogin.jpg)
+
+/list - General page for all users 
+
+![list](documentation/GeneralPage.jpg)
 
 ## Site map
 
@@ -68,6 +79,7 @@ Site map can be accessed [here](https://docs.google.com/drawings/d/1goKXiTKbNzUr
 
 ## [Link to Initial Main Project File](app.mjs) 
 
+(__TODO__: create a skeleton Express application with a package.json, app.mjs, views folder, etc. ... and link to your initial app.mjs)
 
 ## Annotations / References Used
 
@@ -107,27 +119,11 @@ d
 ```EXAMPLE OF USING Fetch```
 Still trying to figure out how to use website API efficiently - don't want to accidently
 use too many calls cause that will be expensive 
-app.get("/", async (req, res, next) => {
-  try {
-    const response = await axiosInstance.get("/getGameSummaries");
-    console.log(response.data.result);
 
-    //You need To send data from using send method
-    res.status(200).send(response.data.result);
-
-    //Or you can use json method to send the data
-    res.status(200).json(response.data.result);
-
-  } catch (err) {
-    res.status(400).send(err);
-  }
-});
-axios.get("https://sportradar.com/?lang=en-us&api_key=your_api_key")
-    .then(response => {this.results = response.data.results})
-  }
-});
 Had huge problems with the API. Firstly axios didn't work as well as expected to I switched to fetch instead. And then the original API that I intented to use sportrac.com gave inaccurate data. They left cancelled Fights on the API. Had to switch to sportsdata.io.
 It was tough to integrate and switch. Very time consuming hence the high rating in points. Needed to understadn how to call the API correctly. 
+Anther issue with the API key is that it refused to work as an envirnment variable.
+It had to be passed in as a plain string for some reason
 
 
 
