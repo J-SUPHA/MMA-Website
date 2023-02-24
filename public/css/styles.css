@@ -1,0 +1,82 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Fira sans',
+}
+body {
+    background-image: linear-gradient(to bottom right, grey 12%, white);
+}
+.app{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.title{
+    font-size: 18px;
+    font-family:"Copperplate"
+}
+
+.fixedElement {
+    background-color: #c0c0c0;
+    top:0;
+    width:100%;
+    z-index:100;
+}
+.box{
+    background:white;
+    width:500px;
+    height: 500px;
+    border-radius:6px;
+    margin: 0 auto 0 auto;
+    padding:0px 0px 70px 0px;
+    border: #2980b9 4px solid; 
+  }
+  .box2{
+    background:white;
+    width:500px;
+    height: 500px;
+    border-radius:6px;
+    margin: 0 auto 0 auto;
+    padding:0px 0px 70px 0px;
+    border: #2980b9 4px solid; 
+  }
+.column{
+    width: 50%;
+    float: left;
+}
+
+.username{
+    background:#ecf0f1;
+    border: #ccc 1px solid;
+    border-bottom: #ccc 2px solid;
+    padding: 8px;
+    width:250px;
+    color: red;
+    margin-top:10px;
+    font-size:1em;
+    border-radius:4px;
+    float:inline-start;
+  }
+  
+  .button {
+    float:left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 25px;
+    font-size: 15px;
+    font-family:copperplate;
+}
+  
+.divElement{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}
